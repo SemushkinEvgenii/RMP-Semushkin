@@ -4,44 +4,28 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_counter"
+        android:layout_width="241dp"
+        android:layout_height="126dp"
+        android:background="@drawable/ground"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:text="@string/txt_students" />
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:gravity="center"
-        android:textSize="50sp"
-        android:textColor="@color/neme"
-        android:padding="15dp"/>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:onClick="onClickred"
-        android:text="@string/cv_red"
-        android:textColor="@color/red"
-        android:backgroundTint="@color/button"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:onClick="onClickyellow"
-        android:text="@string/cv_yellow"
-        android:textColor="@color/yellow"
-        android:backgroundTint="@color/button"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:onClick="onClickgreen"
-        android:text="@string/cv_green"
-        android:textColor="@color/green"
-        android:backgroundTint="@color/button"/>
-
-
+        android:background="@color/button"
+        android:textColor="@color/text"
+        android:onClick="onClickBtnAddStudents"
+        android:text="@string/btn_students" />
 </LinearLayout>
